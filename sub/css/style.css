@@ -1,0 +1,302 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,700,900&display=swap');
+
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {}
+
+.container>section {
+    /* padding-top: 80px; */
+}
+
+.inner {
+    max-width: 1660px;
+    padding: 0 20px;
+    margin: 0 auto;
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    /* position: relative */
+}
+
+.mireuksaji-wrap {
+    background: url(../images/sub0604_bg.png) no-repeat;
+    background-size: cover;
+    
+}
+.mireuksaji_story_box{
+    /* position: relative; */
+}
+.ms-text{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+    /* z-index: 10; */
+}
+.ms-text h2{
+    color: #333;
+    font-size: 2.25em;
+    font-weight: 400;  
+}
+.ms-text p{
+    color: #555;
+    font-size: 1.25em;
+    font-weight: 300;  
+    padding-top: 20px;
+}
+.mireuksaji_story_box:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 460px;
+    background: url(../images/sub0604_topbg.png) center bottom;
+    background-size: cover;
+
+}
+
+.ms_bg {
+    background: url(../images/sub0604_story1024.png) no-repeat 50% 220px;
+    height:2400px; 
+    position: relative;
+}
+.ms_text_left{
+    display: flex;
+    position: absolute;
+    top: 21%;
+    left: 0%;
+    
+}
+.ms_text_left .text-box{
+    padding-left: 120px;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.3;
+    font-weight: 300;
+}
+
+.ms_text_left>.img-box{
+    padding-left: 50px;
+}
+
+.ms_title{
+    position: absolute;
+    top: 43%;
+    left: 23%;
+}
+.ms_title>.title{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.ms_img_right{
+    display: flex;
+    position: absolute;
+    top: 44%;
+    left: 25%;
+    gap: 20px;
+}
+.ms_img_right>.img-box{
+    padding-top: 20px;
+}
+.ms_img_right>.img-box img{
+    width: 80%;
+}
+.ms_text_right{
+    position: absolute;
+    top: 55%;
+    left: 23%;
+}
+.ms_text_right1{
+    position: absolute;
+    top: 61%;
+    right: 26%;
+}
+.ms_text_right>.text-box{
+    text-align: left;
+   
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 300; 
+}
+.ms_text_right1>.text-box1{
+    text-align: right;
+    
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 300; 
+}
+
+.ms_text_bottom{
+    display: flex;
+    position: absolute;
+    top: 76%;
+    left: 20%;
+    gap: 10px;
+}
+.ms_text_bottom>.text-box{
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 300;
+}
+.ms_text_bottom>.img-box img{
+    width: 70%;
+    padding-top: 50px;
+}
+
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 901;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 0;
+
+}
+
+#top-btn span {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 45px;
+    right: 28px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+@media screen and (max-width :797px) {
+    #top-btn {
+        right: 0;
+    }
+}
+/* ipad */
+@media screen and (max-width:1279px) {
+    body {
+        font-size: 14px;
+        overflow-x: hidden
+    }
+
+    /* 1.제거하기 */
+    .hot-wrap,
+    .gnb,
+    video,
+    .pager,
+    .arrow {
+        display: none;
+    }
+
+
+    /* 2. 보이기 */
+
+
+    /* 3. 100%만들기 */
+
+    header>.inner {
+        align-items: center;
+        padding: 0px 16px;
+    }
+
+    .logo {
+        line-height: 70px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .display-list>.display>.swiper-wrapper {
+        height: 40%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .newsletter-list>li>.text-box2 .img-box2 img {
+        width: 100%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    .ham-btn,
+    .close-btn {
+        display: block;
+    }
+
+    .nav-wrap {
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background: white;
+        left: -100;
+        top: 0;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .sub {
+        /* display: block; */
+        position: static;
+        height: auto;
+    }
+
+    .close-btn {
+        width: 32px;
+        margin: 30px;
+    }
+
+
+    /* footer */
+    .foot-top {
+        font-size: 12px;
+        white-space: nowrap;
+
+    }
+
+    .footer-bottom {
+
+        padding: 0px;
+    }
+
+    .foot-text p {
+        display: none;
+    }
+
+    .foot-text>.foot-text1 {
+        display: block;
+    }
+
+    .foot-right>.sitemap {
+        display: none;
+    }
+
+    .app>.gnb>li {
+        display: none;
+    }
+
+    .app>.gnb1>li {
+        display: none;
+    }
+
+    .app>p {
+        padding: 0;
+    }
+}
